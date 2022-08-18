@@ -1,0 +1,16 @@
+
+
+For adding css property a tag, priority order set by below serial : -
+
+By tag name likes h1/p > last assign value of tag name (When we use multiple time same tag for assign css property) > class > id > inline > mark anyone as !important
+
+
+CSS Specificity : https://css-tricks.com/specifics-on-css-specificity/
+
+
+For adding css property a tag, priority order set by below serial : -
+
+By tag name likes h1/p > last assign value of tag name (When we use multiple time same tag for assign css property) > class > id > inline > mark anyone as !important
+
+
+CSS Specificity : https://css-tricks.com/specifics-on-css-specificity/

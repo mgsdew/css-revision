@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Property</title>
+    <style>
+         :root{
+            --side-width: 200px;
+            --main-color: green;
+            --paragraph-color: blue;
+            --border-color: black;
+            --background-color: lightgray;
+         }
+         h1{
+            color: var(--main-color);
+         }
+         p{
+            color: var(--paragraph-color);
+         }
+         footer{
+            clear: both;
+            border: var(--border-color);
+            background-color: var(--background-color);
+         }
+
+         .side-nav, .blogs{
+            float: left;
+            height: 500px;
+         }
+         aside{
+            background-color: springgreen;
+            width: var(--side-width);
+         }
+         /* article{
+            background-color: aliceblue;
+         } */
+         .blogs{
+            background-color: tomato;
+            width: calc(100% - 2*var(--side-width));
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exploring Custom Property</h1>
+        <p title="Welcome you">Welcome</p>
+    </header>
+    <main>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis saepe unde eos consectetur ducimus reiciendis obcaecati? Laboriosam, excepturi molestiae iure aspernatur facilis nam numquam magnam adipisci odio molestias omnis assumenda!</p>
+
+          <section>
+            <aside class="side-nav">
+                Side Navigation
+            </aside>
+            <article class="blogs">
+                <h4>Blog</h4>
+            </article>
+          </section>
+    </main>
+    <footer>
+        <p><small> @Copywrite By - Shahriar</small></p>
+    </footer>
+</body>
+</html>
